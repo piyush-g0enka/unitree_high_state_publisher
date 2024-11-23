@@ -1,0 +1,19 @@
+<launch>
+
+<!--  Launch the get_data script to capture state data from unitree hardware -->
+
+<node name="unitree_data_driver"
+pkg="unitree_high_state_publisher"
+type="get_data.py"
+args="-c 'python3 $(find unitree_high_state_publisher)/scripts/get_data.py'"
+output="screen"/>
+
+
+<!-- Launch ROS node that will publish the HighState data onto the ROS network at 10Hz -->
+
+<node name="unitree_high_state_publisher_node"
+pkg="unitree_high_state_publisher"
+type="publish_in_ros.py"
+output="screen" />
+
+</launch>

@@ -26,4 +26,4 @@ Build the package using catkin_make.
 $ roslaunch unitree_high_state_publisher unitree_high_state_publisher.launch
 ```
 
-You should see a topic "/unitree/robot_state" with a frequency of 10 Hz.
+You should see HighState messages being published to topic "/unitree/robot_state" with a frequency of 10 Hz.

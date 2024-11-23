@@ -62,6 +62,15 @@ float32 yawSpeed	\
 float32[4] rangeObstacle\
 Cartesian[4] footPosition2Body \
 Cartesian[4] footSpeed2Body	\
+
+Note that motorState consists of state of 20 motors out of which first 12 represent actual motor data and remaining 8 prepresent dummy data.\
+The motor data order is as follows:\
+Front-Right 0, 1, 2 --> Front-Left 0, 1, 2 -->  Rear-Right 0, 1, 2 --> Rear-Left 0, 1, 2 \
+
+
+Foot data order is as follows:
+Front-Right --> Front-Left -->  Rear-Right --> Rear-Left\
+
 uint8[40] wirelessRemote\
 uint32 reserve\
 

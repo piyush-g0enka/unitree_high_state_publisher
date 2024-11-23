@@ -68,7 +68,7 @@ uint32 reserve\
 
 uint32 crc\
 
-Note that motorState consists of state of 20 motors out of which first 12 represent actual motor data and remaining 8 prepresent dummy data.\
+Note that motorState consists of state of 20 motors out of which first 12 represent actual motor data and remaining 8 prepresent dummy data. \
 The motor data order is as follows:\
 Front-Right 0, 1, 2 --> Front-Left 0, 1, 2 -->  Rear-Right 0, 1, 2 --> Rear-Left 0, 1, 2 
 

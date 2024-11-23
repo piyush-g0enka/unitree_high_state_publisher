@@ -53,8 +53,10 @@ int16[4] footForce\
 int16[4] footForceEst\
 uint8 mode\
 float32 progress\
-uint8 gaitType<br/>  
-float32 footRaiseHeight\		  
+uint8 gaitType
+##
+float32 footRaiseHeight
+##
 float32[3] position\ 
 float32 bodyHeight\		  
 float32[3] velocity\ 

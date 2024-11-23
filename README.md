@@ -38,7 +38,7 @@ Since the unitree python sdk supports python3 and ROS melodic supports python 2.
 In between, the two scripts use socket communication to pass on the state data from python3 to python 2.7.
 
 #### HighState message structure
-
+```bash
 uint8[2] head\
 uint8 levelFlag\
 uint8 frameReserve\
@@ -69,7 +69,7 @@ uint8[40] wirelessRemote\
 uint32 reserve\
 \
 uint32 crc\
-
+```
 Note that motorState consists of state of 20 motors out of which first 12 represent actual motor data and remaining 8 represent dummy data. \
 \
 The motor data order is as follows:\

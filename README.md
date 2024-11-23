@@ -27,3 +27,10 @@ $ roslaunch unitree_high_state_publisher unitree_high_state_publisher.launch
 ```
 
 You should see HighState messages being published to topic "/unitree/robot_state" with a frequency of 10 Hz.
+
+#### Scripts
+
+Since the unitree python sdk supports python3 and ROS melodic supports python 2.7, two scripts were created.
+get_data.py is a python3 script which uses unitree sdk to get the robot's state data.
+publish_to_ros.py is a python2.7 script which publishes state data onto the ROS network.
+In between, the teo scripts use socket communication to pass on the state data from python3 to python 2.7.
